@@ -1,6 +1,13 @@
 /*NoteBook - PC */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: crimson;
+
+    background-color: gold;
 }
 #seguranca_todos {
     background-color: white;
@@ -61,11 +68,21 @@ body {
     font-size: 1.4em;
 }
 
-.divs_imagem {
+.span_svg {
+    color: ;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(0, 71, 187);
+    margin-left: -120px;
+}
+
+#divs_imagem {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-right: 150px;
+    
 }
 .p_celular {
     font-size: 1.5em;
@@ -93,10 +110,18 @@ body {
     width: 100%;
 }
 
+
+
 .img_svg {
-    width: 250px;
+    width: 200px;
     margin-left: 180px;
     
+}
+
+.div_p {
+    display: flex;
+    align-items:flex-end;
+    margin-left: 150px;
 }
 
 
@@ -137,22 +162,36 @@ footer {
  .span_footer {
     color: blue;
  }
+
+ .whatsapp-button { 
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    
+ }
+
+ .img_whatsaap {
+    width: 50px;
+    height: 50px;
+ }
  
 
 /* Media Query Tablet*/
 @media screen and (max-width: 768px){
     body {
-        background-color:gray;
+        background-color:red;
     }
 
     #seguranca_todos {
         background-color: white;
+        display: flex;
+        flex-direction: column;
     }
 
     .h2_seguranca_todos {
-        padding: 40px;
+        padding: 30px;
         margin-top: 20px;
-        margin-left: 100px;
+        margin-left: 30px;
         color:;
     }
 
@@ -164,7 +203,7 @@ footer {
 
     .img_monitoramento {
         width: 450px;
-        margin-left:100px;
+        margin-left:px;
     }
 
     .h2_seguranca_todos {
@@ -175,23 +214,30 @@ footer {
     #monitoramento_ruas {
         background-color: rgb(36, 208, 124);
         padding: 10px;
+        display: flex;
+        flex-direction: column;
     }
 
     #section_svg {
         background-color: white;
         padding: 30px;
+        
     }
 
     .h2_svg {
         padding: 20px;
         text-align: center;
+        color: rgb(0, 71, 187);
+        font-weight: bold;
+        font-size: 1.8em;
     }
 
     .p_svg {
         padding: 20px;
         font-size: 1.4em;
+        margin-right: 100px;
     }
-
+    
     .img_svg {
         width: 250px;
         margin-left: 180px;
@@ -199,6 +245,16 @@ footer {
 
     .p_svg {
         margin-left: 180px;
+    }
+
+    #divs_imagem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagens_svg_celular{
+        
+        width: 100%;
     }
 
     #formulario {
@@ -238,16 +294,12 @@ footer {
 
 /*Media Query Celular*/
 @media screen and (max-width: 600px){
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
+    
     body {
         background-color: darkgreen;
         /*background-color:rgb(0, 71, 187);*/
         color: white;
+        width: 100%;
         
     }
     
@@ -270,8 +322,7 @@ footer {
     .h2_seguranca_todos {
         padding: 20px;
         margin-top: 20px;
-        margin-left: 100px;
-        color:;
+        margin-left: 5px;
     
         
     }
@@ -290,7 +341,7 @@ footer {
         width: 100%;
         
     }
-    }
+    
     /*SEÇÃO 48*/
     #section_svg {
         background-color: cornflowerblue;
@@ -301,16 +352,34 @@ footer {
 
     .imagens_svg_celular {
         width: 100%;
+        padding-top: 70px;
     }
 
-    .divs_imagem {
-        display: flex;
+    .p_celular {
+       
+      margin: 150px;
+      margin-right:280px ;
+      font-size: 1.6em;
+      font-weight: bold;
+      color:rgb(36, 208, 124);
+    }
+
+    .div_p {
+        
+    }
+    #divs_imagem {
+        display:flex;
         flex-direction: column;
         
     }
     .h2_svg {
-        text-align: center;
+        width: 100%;
+        margin-bottom: 50px;
         padding: 20px;
+        
+        
+    
+        
     }
     
     .p_svg {
@@ -435,4 +504,6 @@ footer {
     textarea {
         width: 380px;
     }
+   
+
 }
